@@ -5,7 +5,7 @@
   "creator": "anoff",
   "description": "arvis workflow to find github repos",
   "defaultIcon": "icon.png",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "webAddress": "https://github.com/jopemachine/arvis-github-repo-search",
   "readme": "",
   "enabled": true,

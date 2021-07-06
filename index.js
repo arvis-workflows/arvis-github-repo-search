@@ -5,7 +5,7 @@ arvish.fetch('https://api.github.com/search/repositories', {
 	query: {
 		q: arvish.input
 	},
-	maxAge: 10 * 60 * 1000
+	maxAge: 86400000
 }).then(data => {
 	const items = data.items
 		.map(elm => ({
