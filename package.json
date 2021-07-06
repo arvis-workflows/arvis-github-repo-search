@@ -1,0 +1,39 @@
+{
+  "name": "arvis-github-repo-search",
+  "version": "0.0.2",
+  "description": "Arvis workflow to find github repos",
+  "license": "MIT",
+  "author": {
+    "name": "anoff",
+    "email": "offenhaeuser@gmail.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "arvis-workflow.json"
+  ],
+  "keywords": [
+    "arvis",
+    "workflow",
+    "github"
+  ],
+  "dependencies": {
+    "arvish": ">=0.4.6"
+  },
+  "devDependencies": {
+    "arvish-test": ">=0.1.0",
+    "ava": "^0.25.0",
+    "xo": "^0.19.0"
+  },
+  "xo": {
+    "esnext": true
+  }
+}

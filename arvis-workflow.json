@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "category": "Productivity",
+  "name": "arvis-github-repo-search",
+  "creator": "anoff",
+  "description": "arvis workflow to find github repos",
+  "defaultIcon": "icon.png",
+  "version": "0.0.2",
+  "webAddress": "https://github.com/jopemachine/arvis-github-repo-search",
+  "readme": "",
+  "enabled": true,
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "command": "github",
+      "title": "Search for github projects",
+      "subtitle": "",
+      "scriptFilter": "node index.js \"{query}\"",
+      "runningSubtext": "Searching...",
+      "withspace": true,
+      "argType": "required",
+      "actions": [
+        {
+          "modifiers": "normal",
+          "type": "open",
+          "target": "{query}"
+        }
+      ]
+    }
+  ]
+}
